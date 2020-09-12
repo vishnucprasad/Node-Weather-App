@@ -25,7 +25,7 @@ app.get('', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.render('about' , {
+    res.render('about', {
         title: 'About me',
         name: 'Vishnu C Prasad'
     });
@@ -43,6 +43,22 @@ app.get('/weather', (req, res) => {
     res.send({
         location: 'New York',
         forecast: 'It is currently 30 degrees out. It feels like 26 degrees out.'
+    });
+});
+
+app.get('/help/*', (req, res) => {
+    res.render('error', {
+        title: 'ERROR 404',
+        name: 'Vishnu C Prasad',
+        error: 'Help article not found.'
+    });
+});
+
+app.get('*', (req, res) => {
+    res.render('error', {
+        title: 'ERROR 404',
+        name: 'Vishnu C Prasad',
+        error: 'Page not found.'
     });
 });
 
