@@ -12,15 +12,26 @@
 <body>
     <div class="main-content">
         {{>header}}
-        <p>Use this site to get your weather!</p>
+        <p>Enter your location below to get your weather!</p>
         <form action="">
             <input type="text" placeholder="Location">
             <button>Search</button>
         </form>
 
         <div class="message-content">
-            <p id="message-1"></p>
-            <p id="message-2"></p>
+            <div class="description-content">
+                <div>
+                    <img id="icon" src="" alt="">
+                </div>
+                <div>
+                    <h2 id="description"></h2>
+                </div>
+            </div>
+            <h3 id="location"></h3>
+            <p id="forecast"></p>
+            <p id="wind-speed"></p>
+            <p id="pressure"></p>
+            <p id="humidity"></p>
         </div>
     </div>
     {{>footer}}

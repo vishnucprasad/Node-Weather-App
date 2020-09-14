@@ -29,7 +29,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About me',
+        title: 'About',
         name: 'Vishnu C Prasad'
     });
 });
@@ -38,7 +38,6 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         name: 'Vishnu C Prasad',
-        helpText: 'This is some helpful text.'
     });
 });
 
