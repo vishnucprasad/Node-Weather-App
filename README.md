@@ -49,5 +49,5 @@ now you will get the weather app on your browser
 Node Js Weather App is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 ```
-                                                 © 2020 VISHNU C Prasad
+                                                 © 2020 VISHNU C PRASAD
 ```
