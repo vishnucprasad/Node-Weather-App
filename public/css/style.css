@@ -130,6 +130,15 @@ button:focus {
   margin: 8px 0;
 }
 
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-link:hover {
+  color: #2196f3;
+}
+
 @media(max-width: 480px) {
   .about-me {
     display: flex;
