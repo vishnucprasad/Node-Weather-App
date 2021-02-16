@@ -1,4 +1,8 @@
-console.log('Client Side javaScript is loaded!');
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceworker.js')
+        .then(reg => console.log('service worker registered'))
+        .catch(err => console.log('service worker not registered', err));
+}
 
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
@@ -25,7 +29,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((data) => {
-            if (data.error) {                
+            if (data.error) {
                 description.textContent = '';
                 locationAndTime.textContent = data.error;
                 forecast.textContent = '';
