@@ -131,7 +131,7 @@ button:focus {
 }
 
 @media(max-width: 480px) {
-  .abut-me {
+  .about-me {
     display: flex;
     flex-direction: column;
   }
